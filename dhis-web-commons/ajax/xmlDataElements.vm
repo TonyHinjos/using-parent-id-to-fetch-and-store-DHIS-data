@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataElements>
+#foreach( $dataElement in $dataElements )
+	<dataElement>
+		<id>$dataElement.id</id>
+		<name>$encoder.xmlEncode( $dataElement.displayName )</name>
+		<shortName>$encoder.xmlEncode( $dataElement.displayShortName )</shortName>
+		<alternativeName>$!encoder.xmlEncode( $dataElement.alternativeName )</alternativeName>
+		<code>$!encoder.xmlEncode( $dataElement.code )</code>
+		<description>$!encoder.xmlEncode( $dataElement.displayDescription )</description>
+		<domainType>$dataElement.getDomainTypeNullSafe()</domainType>
+		<type>$dataElement.type</type>
+		<aggregationOperator>$dataElement.aggregationOperator</aggregationOperator>
+		<categoryCombo>$!encoder.xmlEncode( $dataElement.categoryCombo )</categoryCombo>
+	</dataElement>
+#end
+</dataElements>

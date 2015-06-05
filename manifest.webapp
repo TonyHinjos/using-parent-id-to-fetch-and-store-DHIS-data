@@ -1,0 +1,13 @@
+{
+  "name": "DataSets App",
+  "description": "This is my first app",
+  "launch_path": "index.php",
+  "icons": {"icon":"img/user.png"},
+  "developer": 
+  {
+    "name": "Wahome",
+    "url": "http://test.hiskenya.org"
+  },
+  "default_locale": "en",
+  "version":"1.0.0"
+}
